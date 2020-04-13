@@ -1,0 +1,19 @@
+n = int(input("Enter no. of rows:"))
+num=int(input("Enter 0 or 1:"))
+boolean = bool(num)
+if(num == 1 or num == 0):
+    print("The boolean of", num, "is:", boolean)
+    print("Your Required Pattern is......")
+    if(boolean == True):
+        for i in range(n):
+            for j in range(i):
+                print("*", end="  ")
+            print("\n")
+    elif(boolean == False):
+        for i in range(n,0,-1):
+            for j in range(i):
+                print("*", end=" ")
+            print("\n")
+else:
+    print("Error:Invalid input:Enter only 0 or 1")
+
